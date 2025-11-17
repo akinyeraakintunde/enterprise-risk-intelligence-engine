@@ -1,0 +1,2 @@
+# Sample enterprise system log file (placeholder)
+# Actual logs will be simulated or added later
