@@ -1,18 +1,23 @@
 # risk_analyzer.py
-# Placeholder: Main orchestrator for the risk intelligence engine
+# Main orchestrator for the risk intelligence engine
 
 from anomaly_detector import AnomalyDetector
 from risk_score_engine import RiskScorer
+
 
 def run_risk_analysis():
     detector = AnomalyDetector()
     scorer = RiskScorer()
 
     logs = detector.load_logs("data/system_logs/")
-    anomalies = detector.detect_anomalies(logs)
-    scores = scorer.score_events(anomalies)
+    print(f"Loaded {len(logs)} log entries.")
 
-    scorer.generate_report(scores)
+    anomalies = detector.detect_anomalies(logs)
+    print(f"Detected {len(anomalies)} anomalies.")
+
+    scored = scorer.score_events(anomalies)
+    scorer.generate_report(scored, output="risk_report.html")
+
 
 if __name__ == "__main__":
     run_risk_analysis()
