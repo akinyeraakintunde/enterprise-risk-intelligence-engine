@@ -1,57 +1,76 @@
-Enterprise Risk Intelligence Engine
-AI-Powered Technology Risk & Threat Detection Engine
-A collaborative project by Ibrahim Akinyera (AI/ML Engineering Lead) and Busayo Odukoya (Senior Technology Risk Analyst, CME Group).
+<h1>Enterprise Risk Intelligence Engine</h1>
+<h2>AI-Powered Technology Risk &amp; Threat Detection Engine</h2>
+<p><em>A collaborative project by <strong>Ibrahim Akinyera (AI/ML Engineering Lead)</strong> and <strong>Busayo Odukoya (Senior Technology Risk Analyst, CME Group)</strong>.</em></p>
 
-Overview
-The Enterprise Risk Intelligence Engine is an AI-powered system designed to detect anomalies in enterprise technology environments, identify potential threats, and generate structured risk intelligence reports.
+<hr>
+
+<h2>Overview</h2>
+<p>
+The <strong>Enterprise Risk Intelligence Engine</strong> is an AI-powered system designed to detect anomalies in enterprise technology environments, 
+identify potential threats, and generate structured risk intelligence reports.
+</p>
+<p>
 This project combines:
-	•	Ibrahim Akinyera’s expertise in AI/ML engineering
-	•	Busayo Odukoya’s expertise in enterprise Technology Risk Management
+</p>
+<ul>
+  <li><strong>Ibrahim Akinyera’s</strong> expertise in AI/ML engineering</li>
+  <li><strong>Busayo Odukoya’s</strong> expertise in enterprise Technology Risk Management</li>
+</ul>
+<p>
+to deliver a practical, innovative approach to intelligent risk analytics.
+</p>
 
-together delivering a practical, innovative approach to intelligent risk analytics.
+<h2>Objectives</h2>
+<ul>
+  <li>Build a machine-learning anomaly detection model for enterprise log ecosystems</li>
+  <li>Implement expert-defined KRIs (Key Risk Indicators)</li>
+  <li>Develop a risk scoring engine (Low to Critical)</li>
+  <li>Generate automated HTML/PDF risk intelligence reports</li>
+  <li>Demonstrate cross-functional collaboration for Global Talent (Tech Nation) evidence</li>
+</ul>
 
-Objectives
-	•	Build a machine-learning anomaly detection model for enterprise log ecosystems
-	•	Implement expert-defined KRIs (Key Risk Indicators)
-	•	Develop a risk scoring engine (Low → Critical)
-	•	Generate automated HTML/PDF risk intelligence reports
-	•	Demonstrate cross-functional collaboration for Global Talent (Tech Nation) evidence
+<h2>Key Features</h2>
 
-Key Features
+<h3>AI Anomaly Detection</h3>
+<p>Detects suspicious events across:</p>
+<ul>
+  <li>Authentication logs</li>
+  <li>Network activity</li>
+  <li>Application events</li>
+  <li>API request behaviour</li>
+</ul>
 
-AI Anomaly Detection
-Detects suspicious events across:
-	•	Authentication logs
-	•	Network activity
-	•	Application events
-	•	API request behaviour
+<h3>Risk Scoring Engine</h3>
+<p>Risk levels determined by:</p>
+<ul>
+  <li>Event severity</li>
+  <li>Frequency</li>
+  <li>Business impact</li>
+  <li>Expert-defined KRIs</li>
+</ul>
 
-Risk Scoring Engine
-Risk levels determined by:
-	•	Event severity
-	•	Frequency
-	•	Business impact
-	•	Expert-defined KRIs
+<h3>Automated Reporting</h3>
+<p>Generates enterprise-ready risk reports summarising:</p>
+<ul>
+  <li>Critical anomalies</li>
+  <li>Risk clusters</li>
+  <li>Impact assessment</li>
+  <li>Recommended actions</li>
+</ul>
 
-Automated Reporting
-Generates enterprise-ready risk reports summarising:
-	•	Critical anomalies
-	•	Risk clusters
-	•	Impact assessment
-	•	Recommended actions
+<h3>Modular Architecture</h3>
+<p>Designed for extensibility:</p>
+<ul>
+  <li>Add new machine learning models</li>
+  <li>Integrate cloud log sources</li>
+  <li>Extend to SIEM pipelines</li>
+</ul>
 
-Modular Architecture
-Designed for extensibility:
-	•	Add new ML models
-	•	Integrate cloud log sources
-	•	Extend to SIEM pipelines
+<h2>System Architecture</h2>
+<p><em>Architecture diagram located in:</em> <code>/diagrams/architecture.png</code></p>
 
-System Architecture
-Architecture diagram located in:
-/diagrams/architecture.png
-
-Repository Structure
-enterprise-risk-intelligence-engine/
+<h2>Repository Structure</h2>
+<pre><code>enterprise-risk-intelligence-engine/
 │
 ├── data/
 │   └── system_logs/
@@ -66,44 +85,54 @@ enterprise-risk-intelligence-engine/
 │   └── report_generator.py
 │
 └── README.md
+</code></pre>
 
-How It Works
-1. Log Ingestion
-Loads enterprise event logs from /data/system_logs/.
+<h2>How It Works</h2>
 
-2. ML Anomaly Detection
-Flags patterns deviating from normal behaviour.
+<h3>1. Log Ingestion</h3>
+<p>Loads enterprise event logs from <code>/data/system_logs/</code>.</p>
 
-3. Risk Scoring
-Applies expert-defined scoring to classify events from Low → Critical.
+<h3>2. Machine Learning Anomaly Detection</h3>
+<p>Flags patterns deviating from normal behaviour.</p>
 
-4. Automated Reporting
-Produces clear, structured reports for risk teams and decision makers.
+<h3>3. Risk Scoring</h3>
+<p>Applies expert-defined scoring to classify events from Low to Critical.</p>
 
-Getting Started
+<h3>4. Automated Reporting</h3>
+<p>Produces clear, structured reports for risk teams and decision makers.</p>
 
-Clone the repository
-git clone https://github.com/akinyeraakintunde/enterprise-risk-intelligence-engine.git
-Install dependencies
-pip install -r requirements.txt
-Run the analyzer
-python src/risk_analyzer.py
+<h2>Getting Started</h2>
 
-Collaborators
-Ibrahim Akinyera
-AI/ML Engineer • Data Scientist
-GitHub: https://github.com/akinyeraakintunde
+<h3>Clone the repository</h3>
+<pre><code>git clone https://github.com/akinyeraakintunde/enterprise-risk-intelligence-engine.git
+</code></pre>
 
-Busayo Odukoya
-Senior Technology Risk Analyst (CME Group)
-Expert in enterprise risk, KRIs, operational controls & threat intelligence.
+<h3>Install dependencies</h3>
+<pre><code>pip install -r requirements.txt
+</code></pre>
 
-Relevance to Tech Nation
-This project demonstrates:
-	•	Technical leadership in AI/ML engineering
-	•	Industry collaboration with a recognised Technology Risk specialist
-	•	Innovation in cybersecurity automation
-	•	Impact and value in enterprise risk intelligence
+<h3>Run the analyzer</h3>
+<pre><code>python src/risk_analyzer.py
+</code></pre>
 
-License
-Released under the MIT License.
+<h2>Collaborators</h2>
+
+<h3>Ibrahim Akinyera</h3>
+<p>AI/ML Engineer • Data Scientist<br>
+GitHub: <a href="https://github.com/akinyeraakintunde">https://github.com/akinyeraakintunde</a></p>
+
+<h3>Busayo Odukoya</h3>
+<p>Senior Technology Risk Analyst (CME Group)<br>
+Expert in enterprise risk, KRIs, operational controls and threat intelligence.</p>
+
+<h2>Relevance to Tech Nation</h2>
+<p>This project demonstrates:</p>
+<ul>
+  <li>Technical leadership in AI/ML engineering</li>
+  <li>Industry collaboration with a recognised Technology Risk specialist</li>
+  <li>Innovation in cybersecurity automation</li>
+  <li>Impact and value in enterprise risk intelligence</li>
+</ul>
+
+<h2>License</h2>
+<p>Released under the <strong>MIT License</strong>.</p>
