@@ -1,0 +1,8 @@
+timestamp,user,event_type,source_ip,status
+2025-11-15T09:01:00Z,alice,login,10.0.0.5,success
+2025-11-15T09:05:10Z,bob,login,10.0.0.8,failed
+2025-11-15T09:05:30Z,bob,login,10.0.0.8,failed
+2025-11-15T09:06:00Z,bob,login,10.0.0.8,failed
+2025-11-15T09:10:00Z,carol,privilege_escalation,10.0.0.9,success
+2025-11-15T09:15:00Z,alice,data_export,10.0.0.5,success
+2025-11-15T09:20:00Z,dave,suspicious_login,192.168.1.20,success
