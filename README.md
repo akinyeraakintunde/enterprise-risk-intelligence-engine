@@ -87,6 +87,21 @@ to deliver a practical, innovative approach to intelligent risk analytics.
 └── README.md
 </code></pre>
 
+## Enterprise KRIs and Risk Model (Expert Input)
+
+The risk scoring engine is based on enterprise-style Key Risk Indicators (KRIs)
+provided by the Technology Risk expert:
+
+| KRI ID | Description                                            | Mapped Event Type        | Typical Risk Range |
+|-------|--------------------------------------------------------|--------------------------|--------------------|
+| KRI1  | Repeated failed login attempts (possible brute force)  | `login` with status=fail | Medium to High     |
+| KRI2  | Privilege escalation to admin or elevated privileges   | `privilege_escalation`   | High to Critical   |
+| KRI3  | Data export from sensitive systems or locations        | `data_export`            | High to Critical   |
+| KRI4  | Suspicious login pattern or unusual IP/location        | `suspicious_login`       | Medium to High     |
+
+These KRIs are encoded in the `RiskScorer` class, which assigns a numeric score
+(1–10) and maps it to an enterprise risk level (Low, Medium, High, Critical).
+
 <h2>How It Works</h2>
 
 <h3>1. Log Ingestion</h3>
