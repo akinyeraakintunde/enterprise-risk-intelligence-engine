@@ -1,204 +1,253 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Tech Nation Evidence – Enterprise Risk Intelligence Engine</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<section style="font-family: Arial, sans-serif; line-height: 1.6;">
 
-  <!-- Bootstrap CSS (v5) -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-    crossorigin="anonymous"
-  >
+<h1>Enterprise Risk Intelligence Engine</h1>
+<h3>AI-Powered Log Analysis • Anomaly Detection • Risk Scoring • Automated Reporting</h3>
 
-  <style>
-    body {
-      background-color: #f7f9fb;
-    }
-    .card {
-      border-radius: 14px;
-    }
-    .card-body {
-      border-radius: 14px;
-    }
-    h1, h2, h3 {
-      font-weight: 600;
-    }
-    .badge-evidence {
-      background: #0d6efd10;
-      border: 1px solid #0d6efd40;
-      color: #0d6efd;
-      font-size: 0.8rem;
-      border-radius: 999px;
-      padding: 0.25rem 0.7rem;
-    }
-  </style>
-</head>
-<body>
+<p>
+This project is an <b>AI-powered enterprise risk intelligence system</b> that ingests organisational logs,
+detects anomalies using machine learning, scores risks using Key Risk Indicators (KRIs),
+and automatically generates structured risk reports for cybersecurity, audit, and governance teams.
+</p>
 
-  <div class="container my-5">
-    <div class="row justify-content-center">
-      <div class="col-lg-10">
+<p>
+It demonstrates advanced capabilities in:
+</p>
 
-        <div class="d-flex justify-content-between align-items-center mb-3">
-          <div>
-            <h1 class="h4 mb-1">Tech Nation Evidence – Enterprise Risk Intelligence Engine</h1>
-            <span class="badge-evidence">Optional Criterion – Proven Technical Expertise</span>
-          </div>
-          <div class="text-end small text-muted">
-            <div><strong>Applicant:</strong> Ibrahim Akintunde Akinyera</div>
-          </div>
-        </div>
+<ul>
+  <li>Machine learning (Isolation Forest anomaly detection)</li>
+  <li>Cybersecurity engineering</li>
+  <li>Enterprise risk modelling</li>
+  <li>Python software architecture</li>
+  <li>Automated reporting workflows</li>
+  <li>Collaboration with a Senior Technology Risk Analyst (CME Group)</li>
+</ul>
 
-        <div class="card shadow-sm">
-          <div class="card-body p-4 p-md-5">
+<hr/>
 
-            <p class="text-muted mb-4">
-              This page explains why the <strong>Enterprise Risk Intelligence Engine</strong> project
-              is a strong supporting evidence for the UK Global Talent Visa, under the
-              <strong>Optional Criterion – Proven Technical Expertise</strong>.
-            </p>
+<h2>🚀 Project Overview</h2>
 
-            <hr>
+<p>
+Most enterprise risk teams rely on slow, manual log-review processes, inconsistent spreadsheets,
+and limited visibility into abnormal behaviour. This system automates the entire workflow:
+</p>
 
-            <!-- Overview -->
-            <h2 class="h5 mt-4 mb-3">📌 Overview</h2>
-            <p>
-              The Enterprise Risk Intelligence Engine is an <strong>AI-powered system</strong> that ingests
-              log data, detects anomalies using machine learning, applies enterprise-ready KRI weighting,
-              and generates structured risk reports for cybersecurity, audit and governance teams.
-            </p>
-            <p>
-              The project demonstrates practical expertise in:
-            </p>
-            <ul>
-              <li>Machine learning (Isolation Forest anomaly detection)</li>
-              <li>Cybersecurity engineering</li>
-              <li>Enterprise risk modelling</li>
-              <li>Log processing and risk scoring</li>
-              <li>Python software architecture</li>
-              <li>Automated reporting and risk intelligence</li>
-            </ul>
+<ul>
+  <li>✔ Log ingestion</li>
+  <li>✔ Machine-learning anomaly detection</li>
+  <li>✔ KRI-based risk scoring</li>
+  <li>✔ Automated, exportable risk reports</li>
+</ul>
 
-            <hr>
+<p>
+This enables <b>faster insights, more accurate detection, and scalable security intelligence</b>.
+</p>
 
-            <!-- Why it meets criterion -->
-            <h2 class="h5 mt-4 mb-3">📌 Why This Meets Tech Nation’s Optional Criterion</h2>
+<hr/>
 
-            <div class="mb-3">
-              <h3 class="h6">1. Demonstrates Exceptional Technical Expertise</h3>
-              <p class="mb-2">
-                The project contains advanced ML components, anomaly detection logic, risk scoring,
-                and a modular architecture. It proves the ability to design and implement complex
-                AI-driven systems end-to-end, not just simple prototypes.
-              </p>
-            </div>
+<h2>🧠 System Architecture</h2>
 
-            <div class="mb-3">
-              <h3 class="h6">2. Real-World Cybersecurity &amp; Enterprise Relevance</h3>
-              <p class="mb-2">
-                The system addresses genuine needs in cybersecurity, audit and compliance functions.
-                It aligns with UK priorities in digital risk, cyber defence, fintech, and AI-enabled governance.
-              </p>
-            </div>
+<pre><code>/src
+ ├── anomaly_detector.py         # ML-based anomaly detection
+ ├── risk_score_engine.py        # KRI-based scoring logic
+ ├── risk_analyzer.py            # Pipeline orchestration
+ └── report_generator.py         # Automated risk report generation
+</code></pre>
 
-            <div class="mb-3">
-              <h3 class="h6">3. Collaboration with an Industry Expert</h3>
-              <p class="mb-2">
-                The engine was built in collaboration with <strong>Mr. Busayo Odukoya</strong>,
-                <strong>Senior Technology Risk Analyst at CME Group</strong> – one of the world’s largest
-                financial exchanges. He contributed:
-              </p>
-              <ul>
-                <li>Definition and validation of Key Risk Indicators (KRIs)</li>
-                <li>Enterprise risk thresholds and scoring approaches</li>
-                <li>Risk taxonomy aligned with financial-sector standards</li>
-                <li>Guidance on realistic enterprise control environments</li>
-              </ul>
-              <p class="mb-2">
-                This ensures the system is anchored in <strong>authentic enterprise practice</strong>,
-                not just academic theory.
-              </p>
-            </div>
+<h3>Architecture Diagram</h3>
+<p><img src="docs/figures/architecture_diagram.png" alt="Architecture Diagram" style="max-width: 100%;"></p>
 
-            <div class="mb-3">
-              <h3 class="h6">4. Long-Term Technical Relationship Strengthens Credibility</h3>
-              <p class="mb-2">
-                Ibrahim and Busayo’s relationship dates back to <strong>2012</strong>, when they studied
-                Computer Science at <strong>Fountain University</strong> (Busayo in 300 level, Ibrahim in 100 level).
-                Over the years, Busayo has continuously mentored Ibrahim across:
-              </p>
-              <ul>
-                <li>Core computer science and software engineering</li>
-                <li>Security and risk-thinking mindset</li>
-                <li>Professional discipline and career development</li>
-              </ul>
-              <p class="mb-2">
-                This long-term mentorship supports Ibrahim’s sustained technical growth and maturity.
-              </p>
-            </div>
+<hr/>
 
-            <div class="mb-3">
-              <h3 class="h6">5. Strong Evidence of Innovation &amp; Impact</h3>
-              <p class="mb-2">
-                The system introduces an AI-driven, automated approach to risk analysis that
-                reduces manual workload and improves accuracy. It is directly applicable to UK
-                cybersecurity, digital risk, fintech and regulated sectors.
-              </p>
-            </div>
+<h2>🔍 Key Features</h2>
 
-            <div class="mb-4">
-              <h3 class="h6">6. Supported by Complete, Verifiable Evidence</h3>
-              <p class="mb-2">
-                The corresponding GitHub repository and evidence bundle include:
-              </p>
-              <ul>
-                <li>Full source code for the engine</li>
-                <li>Architecture diagrams and figures</li>
-                <li>Screenshots of reports and processing flows</li>
-                <li>
-                  The full 2–3 page Tech Nation evidence document
-                  <em>(Evidence_4_Enterprise_Risk_Intelligence_Engine_Ibrahim_Akinyera.pdf)</em>
-                </li>
-                <li>A detailed README explaining context, design and usage</li>
-              </ul>
-            </div>
+<h3>1. Machine Learning Anomaly Detection</h3>
+<ul>
+  <li>Isolation Forest model</li>
+  <li>Detects abnormal log behaviour</li>
+  <li>Supports semi-supervised learning</li>
+  <li>Configurable thresholds</li>
+</ul>
 
-            <hr>
+<h3>2. Enterprise Risk Scoring Engine</h3>
+<p>This module transforms anomalies into structured enterprise risk scores using:</p>
+<ul>
+  <li>Weighted KRIs</li>
+  <li>Threshold-based scoring</li>
+  <li>Low / Medium / High severity levels</li>
+  <li>Modular scoring logic</li>
+</ul>
 
-            <!-- Summary -->
-            <h2 class="h5 mt-4 mb-3">📌 Summary</h2>
-            <p>
-              This project provides strong proof of Ibrahim’s:
-            </p>
-            <ul>
-              <li>Exceptional skill in AI, ML, cybersecurity and system design</li>
-              <li>Ability to build real, enterprise-grade digital products</li>
-              <li>Collaboration with a senior professional in a global financial institution</li>
-              <li>Long-standing technical maturity and mentored growth</li>
-              <li>Alignment with UK tech ecosystem needs (cyber, AI, digital risk)</li>
-            </ul>
+<h3>3. Automated Risk Report Generation</h3>
+<p>Produces formatted reports containing:</p>
+<ul>
+  <li>Risk summary</li>
+  <li>Anomaly details</li>
+  <li>KRI contributions</li>
+  <li>Scoring breakdown</li>
+  <li>Recommended actions</li>
+</ul>
 
-            <p class="mb-0">
-              For these reasons, the Enterprise Risk Intelligence Engine is a
-              <strong>highly compelling supporting evidence</strong> for the UK Global Talent Visa (Tech Nation)
-              under the Optional Criterion for proven technical expertise.
-            </p>
+<hr/>
 
-          </div>
-        </div>
+<h2>👤 Industry Collaboration — Mr. Busayo Odukoya (Senior Technology Risk Analyst, CME Group)</h2>
 
-      </div>
-    </div>
-  </div>
+<p>
+This project was developed with the professional guidance and domain expertise of 
+<b>Mr. Busayo Odukoya</b>, a <b>Senior Technology Risk Analyst at CME Group</b>,
+one of the world’s largest and most respected financial exchanges.
+</p>
 
-  <!-- Bootstrap JS (optional, for components) -->
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"
-  ></script>
-</body>
-</html>
+<h3>📚 Long-Term Mentor Since 2012</h3>
+
+<p>
+I have known and worked with Busayo since <b>2012</b>, during our time at 
+<b>Fountain University, Osogbo</b> where:
+</p>
+
+<ul>
+  <li>He was a 300-level Computer Science student</li>
+  <li>I was a 100-level Computer Science student</li>
+  <li>He mentored me academically, technically, and professionally</li>
+</ul>
+
+<p>
+Throughout university and after graduation, he played a consistent role in shaping my growth:
+</p>
+
+<ul>
+  <li>Software engineering discipline</li>
+  <li>Cybersecurity awareness</li>
+  <li>Professional ethics & risk thinking</li>
+  <li>Career path guidance</li>
+  <li>Understanding corporate governance & controls</li>
+</ul>
+
+<h3>🎯 His Enterprise Contribution to This Project</h3>
+
+<ul>
+  <li>Validation of Key Risk Indicators (KRIs)</li>
+  <li>Definition of enterprise risk thresholds</li>
+  <li>Review of scoring logic and weighting</li>
+  <li>Financial-sector compliant risk taxonomy</li>
+  <li>Ensuring alignment with actual enterprise controls</li>
+  <li>Providing practical audit and governance insights</li>
+</ul>
+
+<p>
+His involvement elevates the system to <b>enterprise-grade quality</b> and adds 
+substantial credibility to the project.
+</p>
+
+<hr/>
+
+<h2>🧩 Example Code Snippets</h2>
+
+<h3>Isolation Forest Anomaly Detection</h3>
+<pre><code>from sklearn.ensemble import IsolationForest
+
+model = IsolationForest(contamination=0.05, random_state=42)
+model.fit(features)
+predictions = model.predict(features)
+</code></pre>
+
+<h3>Risk Scoring Logic</h3>
+<pre><code>def calculate_risk(log):
+    score = 0
+
+    if log["failed_logins"] > 3:
+        score += 20
+
+    if log["ip_reputation"] == "malicious":
+        score += 40
+
+    if log["anomaly_detected"]:
+        score += 30
+
+    return score
+</code></pre>
+
+<hr/>
+
+<h2>📂 Repository Structure</h2>
+
+<pre><code>.
+├── README.md
+├── TECH_NATION_EVIDENCE.md
+├── Evidence_4_Enterprise_Risk_Intelligence_Engine_Ibrahim_Akinyera.pdf
+├── src/
+│   ├── anomaly_detector.py
+│   ├── risk_score_engine.py
+│   ├── risk_analyzer.py
+│   └── report_generator.py
+├── docs/
+│   └── figures/
+│       ├── architecture_diagram.png
+│       ├── risk_report_sample.png
+│       ├── anomaly_flow.png
+│       └── scoring_logic.png
+└── tests/
+</code></pre>
+
+<hr/>
+
+<h2>📄 Evidence Document (Tech Nation)</h2>
+
+<p>
+Download the full evidence submitted for my UK Global Talent Visa application:
+</p>
+
+<p>
+  👉 <a href="Evidence_4_Enterprise_Risk_Intelligence_Engine_Ibrahim_Akinyera.pdf">
+  Evidence_4_Enterprise_Risk_Intelligence_Engine_Ibrahim_Akinyera.pdf
+  </a>
+</p>
+
+<hr/>
+
+<h2>🇬🇧 Tech Nation Relevance</h2>
+
+<p>See: <a href="TECH_NATION_EVIDENCE.md">TECH_NATION_EVIDENCE.md</a></p>
+
+<ul>
+  <li>Proven exceptional technical expertise</li>
+  <li>Real cybersecurity + AI engineering</li>
+  <li>Enterprise risk modelling</li>
+  <li>Collaboration with a Senior Risk Analyst in a global institution</li>
+  <li>Ability to design complex digital systems end-to-end</li>
+</ul>
+
+<hr/>
+
+<h2>🧑‍💻 Author</h2>
+<p>
+<b>Ibrahim Akintunde Akinyera</b><br/>
+AI/ML Engineer • Data Scientist • Cybersecurity Contributor<br/>
+Founder – NxtAbroad AI<br/>
+GitHub: <a href="https://github.com/akinyeraakintunde">akinyeraakintunde</a>
+</p>
+
+<hr/>
+
+<h2>⭐ How to Run</h2>
+
+<h3>1. Install dependencies</h3>
+<pre><code>pip install -r requirements.txt</code></pre>
+
+<h3>2. Run risk pipeline</h3>
+<pre><code>python src/risk_analyzer.py</code></pre>
+
+<h3>3. View report</h3>
+<p>Reports appear in <code>.txt</code> or <code>.html</code> formats.</p>
+
+<hr/>
+
+<h2>🧭 Future Improvements</h2>
+
+<ul>
+  <li>Real-time log streaming</li>
+  <li>Autoencoder / Transformer anomaly detection</li>
+  <li>Dashboard visualisation (Streamlit / Grafana)</li>
+  <li>SIEM integration</li>
+</ul>
+
+</section>
