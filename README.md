@@ -130,17 +130,16 @@ These KRIs are encoded in the `RiskScorer` class, which assigns a numeric score
 <pre><code>python src/risk_analyzer.py
 </code></pre>
 
-### Expert Collaboration
+<h3>Expert Collaboration</h3>
+<p>This project was developed collaboratively:</p>
+<ul>
+  <li><strong>Ibrahim Akinyera</strong> built the full AI/ML detection engine, scoring logic, reporting pipeline and GitHub codebase.</li>
+  <li><strong>Busayo Odukoya (CME Group)</strong> provided real enterprise Technology Risk KRIs, risk thresholds, and validation criteria used in the scoring model.</li>
+</ul>
+<p>
+  This reflects a real-world cross-functional cybersecurity collaboration between an AI/ML engineer and an enterprise Technology Risk expert.
+</p>
 
-The risk model and KRI design were developed collaboratively:
-
-- Ibrahim Akinyera led the design and implementation of the anomaly detection
-  engine, scoring logic and reporting pipeline.
-- Busayo Odukoya, a Senior Technology Risk Analyst, provided enterprise risk
-  scenarios, KRIs and validation of the scoring thresholds and risk levels.
-
-This collaboration ensures that the engine reflects real-world enterprise
-technology risk practices rather than purely academic assumptions.
 
 
 <h2>Relevance to Tech Nation</h2>
