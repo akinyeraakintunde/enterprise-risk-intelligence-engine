@@ -1,0 +1,58 @@
+Enterprise Risk Intelligence Engine – Sample Risk Report
+========================================================
+
+Overall Risk Score: 68.4 / 100
+Risk Band: Medium
+
+Date Generated: 2025-xx-xx
+Input Source: data/system_logs/sample_logs.csv
+
+--------------------------------------------------------
+Key Risk Indicators (KRIs)
+--------------------------------------------------------
+- Anomaly severity index:        72.0
+- Failed login rate:             65.0
+- Error spike index:             70.0
+- Rare event density:            55.0
+- Log volume variation:          60.0
+
+--------------------------------------------------------
+Summary
+--------------------------------------------------------
+The analysed log set exhibits a sustained elevation in anomaly severity and
+error spikes, alongside a noticeable increase in failed login attempts.
+While there is no single catastrophic event, the cumulative pattern indicates
+heightened operational and access-related risk.
+
+--------------------------------------------------------
+Drivers of Risk
+--------------------------------------------------------
+1) Authentication and Access
+   - Above-normal failed login rate suggests potential credential abuse
+     or misconfiguration of authentication mechanisms.
+
+2) Application and Service Stability
+   - Error spikes concentrated around specific time windows may indicate
+     fragile services, deployment issues, or unhandled edge cases.
+
+3) Operational Monitoring
+   - Moderate rare event density and volume variation show that the log
+     stream is active and occasionally unusual, requiring closer tracking.
+
+--------------------------------------------------------
+Recommendations
+--------------------------------------------------------
+- Investigate periods of high failed-login activity for potential brute-force
+  attempts, shared credentials, or misconfigured integrations.
+- Review application and service logs around peak error windows; introduce
+  additional alerting or automated rollback where appropriate.
+- Implement dashboard views keyed to the KRIs in this report and track
+  changes over time for trend analysis.
+
+--------------------------------------------------------
+Notes
+--------------------------------------------------------
+This report was generated automatically by the Enterprise Risk Intelligence
+Engine. It is intended as a decision-support tool and should be read in
+conjunction with subject-matter expertise from security, operations and
+governance stakeholders.
