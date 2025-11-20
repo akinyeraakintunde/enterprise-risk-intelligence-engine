@@ -1,0 +1,20 @@
+flowchart LR
+
+    A[Input Profile <br> JSON or CSV] --> B[Feature Builder <br> Normalisation & Derivations]
+
+    B --> C[Rules Engine <br> Domain-Level Scoring]
+    C --> D[Rule-Based Score <br> 0–100]
+
+    A --> E[Optional ML Model <br> Risk Probability]
+    E --> F[ML Risk Score <br> 0–1]
+
+    D --> G[Score Combiner <br> Weighted Blend]
+    F --> G
+
+    G --> H[Final Risk Score <br> 0–100]
+    H --> I[Risk Band <br> Low / Medium / High]
+
+    G --> J[Narrative Notes <br> Explainable Output]
+
+    I --> K[Reports / Dashboard Export]
+    J --> K
