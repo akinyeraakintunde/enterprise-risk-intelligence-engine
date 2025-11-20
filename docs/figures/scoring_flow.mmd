@@ -1,0 +1,22 @@
+flowchart TB
+
+    A[Load JSON/CSV Input] --> B[Extract Domains]
+    B --> C[Run Financial Scoring]
+    B --> D[Run Documentation Scoring]
+    B --> E[Run Eligibility Scoring]
+    B --> F[Run Compliance Scoring]
+    B --> G[Run Behaviour Scoring]
+
+    C --> H[Aggregate Category Scores]
+    D --> H
+    E --> H
+    F --> H
+    G --> H
+
+    H --> I[Compute Weighted Rule Score]
+    I --> J[Optional ML Score]
+    J --> K[Combine Scores]
+
+    K --> L[Final Risk Score]
+    L --> M[Assign Band: Low | Medium | High]
+    K --> N[Generate Notes]
