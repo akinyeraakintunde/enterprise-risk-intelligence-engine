@@ -1,100 +1,132 @@
 # TECH NATION EVIDENCE – Enterprise Risk Intelligence Engine
 
-## Evidence Type  
-Technical Contribution – Applied AI, Risk Analytics, and System Design
+## Evidence Type
+Technical Contribution – Applied AI, Cybersecurity Analytics, Risk Engineering
 
-## Applicant  
+## Applicant
 Ibrahim Akintunde Akinyera
 
-## Overview  
-The Enterprise Risk Intelligence Engine is a hybrid rules-based and AI-aware scoring system designed to evaluate enterprise-level risks across financial, operational, compliance, governance, and technology dimensions.  
+------------------------------------------------------------
+## 1. Overview
 
-The system was fully architected and implemented by Ibrahim Akintunde Akinyera, with risk-domain review input from Busayo E. Odukoya (Senior Technology Risk Management Analyst, CME Group). It demonstrates technical leadership, end-to-end system engineering, explainable automation, and the ability to translate complex risk frameworks into deployable software.
+The Enterprise Risk Intelligence Engine is a Python-based system designed to analyse organisational log data, detect anomalies, score key risk indicators (KRIs), and generate explainable risk reports. It demonstrates strong engineering capability across machine learning, cybersecurity analytics, log processing, risk scoring, and automated reporting.
 
-This project is submitted as part of the Technical Contribution requirement for the UK Global Talent Visa (Digital Technology).
+The system was architected and implemented by Ibrahim Akintunde Akinyera.  
+Risk-domain validation was provided by **Busayo E. Odukoya**, Senior Technology Risk Management Analyst at CME Group, one of the world’s largest financial market infrastructure organisations.
+
+This project is submitted as part of Ibrahim’s Technical Contribution evidence for the UK Global Talent Visa (Digital Technology).
 
 ------------------------------------------------------------
-## Problem Statement
+## 2. Problem & Motivation
 
-Many small and medium enterprises do not have consistent risk assessment processes. Common issues include:
+Many SMEs lack the resources to run full cybersecurity or technology risk teams. Operational and cybersecurity risks are often assessed manually using spreadsheets or informal judgment. This leads to:
 
-- Reliance on spreadsheets and subjective judgement  
-- Inconsistent scoring between departments  
-- No audit trail or documentation behind decisions  
-- Difficulty scaling governance processes  
-- No automated or data-driven oversight  
+- inconsistent analysis across teams
+- no repeatability or automation
+- limited visibility into high-risk behaviours
+- no structured prioritisation of risk events
+- lack of transparency for audits and governance reviews
 
-This project provides a structured, configurable, and explainable engine suitable for SMEs, EdTech, immigration advisory businesses, fintech compliance units, and digital governance teams.
-
-------------------------------------------------------------
-## Technical Contribution Summary
-
-Ibrahim designed and implemented all core technical components:
-
-1. **Architectural Design**
-   - Hybrid scoring model (rules + optional machine learning).
-   - Domain-based scoring system (governance, technology, financial, compliance).
-   - YAML-driven configuration for weights, thresholds, and rules.
-   - Clear module separation for risk_engine, reporting, CLI entrypoints.
-
-2. **Implementation**
-   - Coded all scoring logic, rule evaluation, and aggregation.
-   - Implemented CLI interface for scoring CSV-based risk registers.
-   - Added narrative-driven reporting for transparency and audit readiness.
-   - Developed extensible schema for risk profiles and outputs.
-   - Created example datasets and configuration files.
-
-3. **Documentation**
-   - Full README documentation with architecture, examples, and usage.
-   - Diagrams describing scoring flow and engine design.
-   - TECH_NATION_EVIDENCE.md for reviewers.
-   - Clear explanation of scoring methodology for non-technical users.
-
-4. **Risk Expertise Validation**
-   - Architecture and scoring logic reviewed by **Busayo E. Odukoya**,  
-     Senior Technology Risk Management Analyst at CME Group.  
-   - Busayo provided professional validation and domain alignment.  
-   - All engineering and implementation was performed independently by Ibrahim.
+This project addresses these gaps by providing an automated and explainable risk scoring system.
 
 ------------------------------------------------------------
-## Impact
+## 3. Technical Contribution Summary
 
-This engine establishes:
+### 3.1 System Architecture (Designed by Ibrahim Akinyera)
+The system is composed of:
 
-- Consistent and automated risk evaluation for SMEs.  
-- Explainable scoring for governance, audit, and compliance teams.  
-- A template that can evolve into:
-  - A FastAPI risk assessment service  
-  - Dashboard analytics and live monitoring  
-  - Machine-learning augmented models for anomaly detection  
+- **Log Ingestion Layer** – loads CSV log files and normalises fields.
+- **Anomaly Detection Engine** – identifies unusual log behaviour using Isolation Forest.
+- **KRI Scoring Engine** – computes weighted risk attributes (failed logins, error spikes, rare events, etc.).
+- **Risk Aggregation Engine** – combines KRIs into a final risk score (0–100).
+- **Risk Band Classifier** – maps scores to Low, Medium, or High.
+- **Reporting Engine** – generates human-readable risk reports with narrative explanations.
+- **Evidence and documentation** – diagrams, scoring logic, and architectural explanation.
 
-It demonstrates the applicant’s ability to lead complex systems engineering work at the intersection of risk, AI, automation, and digital governance.
+### 3.2 Code Contributions (Fully implemented by Ibrahim)
+Key modules:
+
+- `src/anomaly_detector.py`  
+- `src/risk_score_engine.py`  
+- `src/risk_analyzer.py`  
+- `src/report_generator.py`  
+- `src/utils.py`
+
+These modules contain:
+- Data parsing and feature extraction
+- ML-based anomaly scoring
+- Deterministic KRI scoring logic
+- Weight-based risk aggregation
+- Automated generation of narrative text reports
+- Flexible CLI-driven orchestration
+
+### 3.3 Documentation & Evidence
+Ibrahim produced full documentation:
+
+- README.md – system overview, architecture, examples, run instructions
+- Architecture diagrams (in docs/figures/)
+- Scoring flow diagrams
+- Sample generated reports
+- Evidence_4_Enterprise_Risk_Intelligence_Engine_Ibrahim_Akinyera.pdf
 
 ------------------------------------------------------------
-## Evidence Included in the Repository
+## 4. Role of External Reviewer
 
-- Source code for rules engine and scoring logic  
-- CLI interface for batch scoring  
-- YAML configuration examples  
-- Sample risk input and output files  
-- Architecture diagram (docs/figures/)  
-- Scoring flow diagram (docs/figures/)  
-- Full project README  
-- Acknowledgement of external technical review  
-- Reference letter from Busayo E. Odukoya (submitted separately as PDF)
+The scoring model, KRIs, thresholds, and governance relevance were **reviewed by Busayo E. Odukoya**, Senior Technology Risk Management Analyst at CME Group.
 
-------------------------------------------------------------
-## Why This Demonstrates Technical Leadership
+Busayo provided:
+- validation of risk domains and KRIs  
+- review of scoring thresholds and weights  
+- alignment with enterprise governance practice  
+- confirmation of the project’s real-world relevance  
 
-- Full system designed and built individually  
-- Reflects deep knowledge of risk analytics and system automation  
-- High-quality documentation and engineering discipline  
-- Shows ability to work with senior professionals in the field  
-- Provides real-world value to SMEs and digital-first organisations  
-- Demonstrates initiative, ownership, and strong engineering principles
+All engineering, coding, design, and implementation work were done independently by Ibrahim.
 
 ------------------------------------------------------------
-## Contact  
+## 5. Impact
+
+The system provides:
+
+- consistent and automated risk evaluation  
+- ML-driven anomaly detection for logs  
+- explainable narrative risk reports  
+- auditable scoring frameworks  
+- governance-friendly outputs  
+- an extendable design suitable for:
+  - cybersecurity operations
+  - EdTech or SME governance
+  - internal audit support
+  - fraud and anomaly analysis
+  - IT incident monitoring
+
+The engine demonstrates Ibrahim’s ability to design and build digital systems that combine machine learning, risk analytics, and enterprise governance concepts.
+
+------------------------------------------------------------
+## 6. Evidence Contained in This Repository
+
+- Complete source code for the anomaly detection and risk scoring engine  
+- Architecture diagram  
+- Scoring logic diagram  
+- Example risk reports  
+- Input log data samples  
+- Full README documentation  
+- Full Evidence PDF  
+- External technical validation (see recommendation letter from Busayo Odukoya)  
+
+------------------------------------------------------------
+## 7. Why This Meets Tech Nation’s Technical Contribution Criterion
+
+- Clear demonstration of deep technical expertise  
+- End-to-end ownership of a multi-component risk system  
+- Strong real-world relevance (cybersecurity, compliance, log analytics)  
+- Collaboration with a senior external reviewer  
+- Production-style structure, documentation, and engineering maturity  
+- Evidence of impact and future scalability
+
+------------------------------------------------------------
+## 8. Contact
+
 Ibrahim Akintunde Akinyera  
-Email: akinyeraakintunde@gmail.com
-Website: https://akinyeraakintunde.github.io/Ibrahim-Akinyera
+Website: https://akinyeraakintunde.github.io  
+GitHub: https://github.com/akinyeraakintunde  
+Email: [your email here]
