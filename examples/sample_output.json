@@ -1,0 +1,26 @@
+{
+    "rule_scores": {
+        "financial": 85,
+        "documentation": 95,
+        "eligibility": 90,
+        "compliance": 100,
+        "behaviour": 88
+    },
+
+    "rule_based_score": 91.6,
+    "ml_score": 0.5,
+
+    "final_risk_score": 20.96,
+    "risk_band": "Low",
+
+    "notes": [
+        "[financial] Bank balance is comfortably above the required minimum.",
+        "[financial] Applicant has regular income.",
+        "[documentation] All required documents are provided.",
+        "[documentation] Documents successfully verified.",
+        "[eligibility] Meets minimum eligibility requirements.",
+        "[eligibility] Academic performance significantly above requirement.",
+        "[compliance] No compliance issues detected.",
+        "[behaviour] High response consistency score."
+    ]
+}
