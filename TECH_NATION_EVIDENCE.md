@@ -96,5 +96,5 @@ It demonstrates the applicant’s ability to lead complex systems engineering wo
 ------------------------------------------------------------
 ## Contact  
 Ibrahim Akintunde Akinyera  
-Email: [add your email here]  
+Email: akinyeraakintunde@gmail.com
 Website: https://akinyeraakintunde.github.io/Ibrahim-Akinyera
