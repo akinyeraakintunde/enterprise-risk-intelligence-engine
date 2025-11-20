@@ -1,0 +1,33 @@
+{
+    "financial": {
+        "bank_balance": 15000,
+        "minimum_required": 12000,
+        "has_regular_income": true,
+        "recent_large_unexplained_deposits": false
+    },
+
+    "documentation": {
+        "all_required_documents_provided": true,
+        "documents_verified": true,
+        "inconsistencies_found": 0
+    },
+
+    "eligibility": {
+        "meets_minimum_criteria": true,
+        "gpa": 3.4,
+        "required_gpa": 2.5,
+        "gap_years": 1
+    },
+
+    "compliance": {
+        "previous_visa_refusals": 0,
+        "adverse_immigration_history": false,
+        "sanctions_or_watchlists": false
+    },
+
+    "behaviour": {
+        "response_consistency_score": 0.92,
+        "missed_deadlines": 0,
+        "suspicious_communication": false
+    }
+}
