@@ -6,7 +6,6 @@ The system ingests structured risk data (controls, incidents, assets, financial 
 
 The project was designed and implemented by Ibrahim Akintunde Akinyera (Founder, NxtAbroad) with strategic risk input from Busayo E. Odukoya (Senior Technology Risk Management Analyst, CME Group).
 
-------------------------------------------------------------
 ## 1. Why this project exists
 
 Most SMEs do not have dedicated risk teams and typically rely on spreadsheets or inconsistent judgement. This results in:
@@ -23,7 +22,6 @@ This engine solves these problems by providing:
 - A foundation for automation and continuous monitoring
 - A governance-ready artefact for risk, audit, and compliance teams
 
-------------------------------------------------------------
 ## 2. High-level architecture
 
 The engine follows a structured pipeline:
@@ -46,7 +44,6 @@ The engine follows a structured pipeline:
 Architecture diagrams are stored in:
 docs/figures/
 
-------------------------------------------------------------
 ## 3. Key features
 
 - Fully configurable risk rules via YAML
@@ -56,7 +53,6 @@ docs/figures/
 - CLI execution for business users
 - Extensible into API and dashboard interfaces
 
-------------------------------------------------------------
 ## 4. Repository structure
 
 enterprise-risk-intelligence-engine/
@@ -76,7 +72,6 @@ enterprise-risk-intelligence-engine/
 ├── requirements.txt
 └── LICENSE
 
-------------------------------------------------------------
 ## 5. Getting started
 
 ### 5.1 Installation
@@ -103,7 +98,6 @@ The output CSV contains:
 - Domain sub-scores
 - Flags and narrative notes
 
-------------------------------------------------------------
 ## 6. Configuration model (YAML)
 
 Example rule configuration:
@@ -131,7 +125,6 @@ rules:
     impact: +10
     message: "Absence of audit trail raises governance risk."
 
-------------------------------------------------------------
 ## 7. Development notes
 
 - Python 3.10+
@@ -145,7 +138,6 @@ pytest
 
 Tests validate rule correctness, score aggregation, and edge cases.
 
-------------------------------------------------------------
 ## 8. Using this engine in real organisations
 
 1. Define the risk entities (vendors, customers, systems, departments)
@@ -155,7 +147,6 @@ Tests validate rule correctness, score aggregation, and edge cases.
 5. Calibrate using real historical assessments
 6. Embed engine outputs into governance processes
 
-------------------------------------------------------------
 ## 9. UK Global Talent relevance
 
 This repository supports Ibrahim Akintunde Akinyera’s Technical Contribution evidence for the UK Global Talent Visa (Digital Technology). It demonstrates:
@@ -169,13 +160,11 @@ This repository supports Ibrahim Akintunde Akinyera’s Technical Contribution e
 Supporting evidence is detailed in:
 TECH_NATION_EVIDENCE.md
 
-------------------------------------------------------------
 ## 10. Credits
 
 Ibrahim Akintunde Akinyera – Architect and Lead Developer  
 Busayo E. Odukoya – Risk Expertise and Validation
 
-------------------------------------------------------------
 ## 11. License
 
 Released under the MIT License.
