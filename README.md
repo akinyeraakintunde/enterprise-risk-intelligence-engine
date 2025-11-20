@@ -1,170 +1,179 @@
 # Enterprise Risk Intelligence Engine
 
-Enterprise Risk Intelligence Engine is a production-style Python project for scoring, monitoring, and explaining enterprise-level risks for SMEs and digital businesses.
+The Enterprise Risk Intelligence Engine is a Python-based system for assessing, scoring, and explaining enterprise risks by analysing logs, detecting anomalies, and applying a structured KRI-driven scoring model. It is designed for SMEs, cybersecurity teams, and digital organisations that require automated, transparent, and repeatable risk evaluation.
 
-The system ingests structured risk data (controls, incidents, assets, financial and operational indicators), applies a configurable rules and scoring engine, and produces transparent risk scores and narrative reports that can be consumed by business stakeholders or integrated into dashboards.
+The system was architected and implemented by Ibrahim Akintunde Akinyera, with risk-domain review by Busayo E. Odukoya (Senior Technology Risk Management Analyst, CME Group). It forms a core part of the Technical Contribution evidence for the UK Global Talent Visa (Digital Technology).
 
-The project was designed and implemented by Ibrahim Akintunde Akinyera (Founder, NxtAbroad) with strategic risk input from Busayo E. Odukoya (Senior Technology Risk Management Analyst, CME Group).
+------------------------------------------------------------
+## 1. Why This Project Exists
 
-## 1. Why this project exists
+Most organisations rely on spreadsheets and subjective judgement when assessing operational or technology risk. This leads to:
 
-Most SMEs do not have dedicated risk teams and typically rely on spreadsheets or inconsistent judgement. This results in:
+- inconsistent assessments across teams
+- no traceability or justification behind decisions
+- no automation or repeatability
+- limited visibility into anomalous behaviour
+- weak governance, oversight, and accountability
 
-- Inconsistent assessment of identical risks
-- Poor visibility of aggregated exposure
-- No clear audit trail for decisions
-- Difficulty aligning technology risk with business, policy, and regulatory expectations
+This engine provides a structured and automated alternative through:
 
-This engine solves these problems by providing:
+- anomaly detection using Isolation Forest
+- KRI-based quantitative scoring
+- automated narrative reporting
+- clear architecture and documentation
+- reproducible, extensible engineering patterns
 
-- A repeatable and transparent scoring framework
-- Explainable and traceable outputs
-- A foundation for automation and continuous monitoring
-- A governance-ready artefact for risk, audit, and compliance teams
+------------------------------------------------------------
+## 2. Key Features
 
-## 2. High-level architecture
+- Anomaly Detection  
+  Detects unusual log patterns using Isolation Forest.
 
-The engine follows a structured pipeline:
+- KRI-Based Risk Scoring  
+  Scores anomaly severity, login risk, error spikes, rare events, and log volume variation.
 
-1. Input Layer  
-   Structured CSV files or risk registers.
+- Explainable Outputs  
+  Generates narrative notes explaining each risk factor.
 
-2. Feature Builder  
-   Normalises raw fields, derives metrics, and encodes categorical inputs.
+- Automated Reporting  
+  Produces text or HTML risk reports.
 
-3. Rules and Scoring Engine  
-   Applies deterministic rules, weightings, and thresholds per domain.
+- Modular Architecture  
+  Separate modules for ML detection, scoring, analysis, and reporting.
 
-4. Risk Classifier  
-   Converts numeric scores into qualitative bands (Low, Medium, High, Critical).
+- Tech Nation Evidence Ready  
+  Includes documentation, diagrams, and the full Evidence PDF.
 
-5. Reporting Layer  
-   Generates detailed risk outputs for dashboards and BI tools.
+------------------------------------------------------------
+## 3. System Architecture
 
-Architecture diagrams are stored in:
-docs/figures/
+A full system architecture diagram is available under:
+docs/figures/architecture_diagram.png
 
-## 3. Key features
+High-level flow:
+1. Raw logs ingested
+2. Normalisation and feature extraction
+3. Isolation Forest anomaly detection
+4. KRI computation
+5. Weighted risk scoring
+6. Risk band classification
+7. Narrative report generation
 
-- Fully configurable risk rules via YAML
-- Domain-based scoring (governance, technology, financial, compliance)
-- Deterministic explainable scoring (no black-box ML)
-- Clear separation of modules and logic
-- CLI execution for business users
-- Extensible into API and dashboard interfaces
-
-## 4. Repository structure
+------------------------------------------------------------
+## 4. Repository Structure
 
 enterprise-risk-intelligence-engine/
 |
-├── data/                     Example datasets
-├── docs/figures/            Architecture diagrams
+├── data/                     Sample log input files
+├── docs/
+│   └── figures/              Architecture and scoring diagrams
 ├── src/
-│   ├── risk_engine/         Core scoring logic
-│   ├── reporting/           Report generation
-│   └── cli_main.py          CLI entrypoint
+│   ├── anomaly_detector.py   ML-based anomaly detection
+│   ├── risk_score_engine.py  KRI-based scoring logic
+│   ├── risk_analyzer.py      Full pipeline orchestrator
+│   ├── report_generator.py   Text and HTML reporting
+│   └── utils.py              Helper utilities
 |
-├── notebooks/               Exploratory analysis
-├── tests/                   Optional unit tests
+├── outputs/                  Generated risk reports
+├── tests/                    Unit tests (optional)
 |
-├── README.md
+├── Evidence_4_Enterprise_Risk_Intelligence_Engine_Ibrahim_Akinyera.pdf
 ├── TECH_NATION_EVIDENCE.md
 ├── requirements.txt
-└── LICENSE
+└── README.md
 
-## 5. Getting started
+------------------------------------------------------------
+## 5. Installation
 
-### 5.1 Installation
+Clone the repo:
 
 git clone https://github.com/akinyeraakintunde/enterprise-risk-intelligence-engine.git
 cd enterprise-risk-intelligence-engine
 
-python -m venv .venv
-source .venv/bin/activate
+Install dependencies:
+
 pip install -r requirements.txt
 
-### 5.2 Run the engine
+------------------------------------------------------------
+## 6. Running the Engine
 
-python -m src.cli_main --input data/sample_risk_register.csv --config configs/default_rules.yaml --output outputs/risk_scored.csv
+Default run:
 
-Arguments:
---input: CSV dataset
---config: YAML config with rules and weights
---output: Path for the scored file
+python src/risk_analyzer.py
 
-The output CSV contains:
-- Final risk scores
-- Risk band classification
-- Domain sub-scores
-- Flags and narrative notes
+Default inputs:
+data/system_logs/sample_logs.csv
 
-## 6. Configuration model (YAML)
+Default outputs:
+outputs/risk_report.txt
 
-Example rule configuration:
+Custom paths:
 
-weights:
-  governance: 0.25
-  technology: 0.35
-  financial: 0.20
-  compliance: 0.20
+python src/risk_analyzer.py --input data/my_logs.csv --output reports/my_report.txt
 
-thresholds:
-  high_risk_score: 75
-  critical_risk_score: 90
+------------------------------------------------------------
+## 7. Scoring Logic (KRI Model)
 
-rules:
-  - id: weak_password_policy
-    domain: technology
-    condition: "password_policy_strength == 'weak'"
-    impact: +15
-    message: "Weak password policy increases technology risk."
+def calculate_risk_score(kri_scores):
+    weights = {
+        "anomaly_severity": 0.30,
+        "log_volume_variation": 0.20,
+        "failed_login_rate": 0.20,
+        "error_spike_index": 0.20,
+        "rare_event_density": 0.10
+    }
 
-  - id: missing_audit_trail
-    domain: governance
-    condition: "has_audit_trail == 0"
-    impact: +10
-    message: "Absence of audit trail raises governance risk."
+    final_score = 0
+    for kri, value in kri_scores.items():
+        final_score += weights.get(kri, 0) * value
 
-## 7. Development notes
+    return round(final_score, 2)
 
-- Python 3.10+
-- Type hints used extensively
-- Linting recommended (flake8 or ruff)
-- Modular architecture
+Higher scores indicate higher risk.
 
-### Testing
+------------------------------------------------------------
+## 8. Outputs
 
-pytest
+The generated report includes:
 
-Tests validate rule correctness, score aggregation, and edge cases.
+- Overall risk score (0–100)
+- Risk band (Low, Medium, High)
+- KRI breakdown
+- Anomaly summary
+- Narrative explanation
+- Recommended next steps
 
-## 8. Using this engine in real organisations
+Sample output diagram:
+docs/figures/risk_report_sample.png
 
-1. Define the risk entities (vendors, customers, systems, departments)
-2. Map available data (KYC, due diligence, audit logs, controls)
-3. Set domain weightings aligned to enterprise risk appetite
-4. Translate policies into rule conditions
-5. Calibrate using real historical assessments
-6. Embed engine outputs into governance processes
+------------------------------------------------------------
+## 9. UK Global Talent Evidence
 
-## 9. UK Global Talent relevance
+This repository underpins the submission:
 
-This repository supports Ibrahim Akintunde Akinyera’s Technical Contribution evidence for the UK Global Talent Visa (Digital Technology). It demonstrates:
+Evidence 4: Enterprise Risk Intelligence Engine  
+by Ibrahim Akintunde Akinyera
 
-- Full end-to-end engineering ownership
-- Deep application of risk management domain knowledge
-- Collaboration with a senior risk professional (Busayo Odukoya)
-- Strong documentation, diagrams, and governance alignment
-- A reusable engine for SMEs and startups requiring automated risk evaluation
+Included:
 
-Supporting evidence is detailed in:
-TECH_NATION_EVIDENCE.md
+- Full Evidence PDF
+- Technical documentation
+- Architecture diagrams
+- Scoring logic diagrams
+- Code showing ML + risk analytics engineering
 
+Reviewed by:
+Busayo E. Odukoya  
+Senior Technology Risk Management Analyst  
+CME Group
+
+------------------------------------------------------------
 ## 10. Credits
 
-Ibrahim Akintunde Akinyera – Architect and Lead Developer  
-Busayo E. Odukoya – Risk Expertise and Validation
+Ibrahim Akintunde Akinyera – System Architect and Lead Engineer  
+Busayo E. Odukoya – Risk-domain reviewer and technical validation
 
+------------------------------------------------------------
 ## 11. License
 
-Released under the MIT License.
+MIT License
