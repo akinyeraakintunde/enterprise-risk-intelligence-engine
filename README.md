@@ -2,7 +2,7 @@
 
 The Enterprise Risk Intelligence Engine is a Python-based system for assessing, scoring, and explaining enterprise risks by analysing logs, detecting anomalies, and applying a structured KRI-driven scoring model. It is designed for SMEs, cybersecurity teams, and digital organisations that require automated, transparent, and repeatable risk evaluation.
 
-The system was architected and implemented by Ibrahim Akintunde Akinyera, with risk-domain review by Busayo E. Odukoya (Senior Technology Risk Management Analyst, CME Group). It forms a core part of the Technical Contribution evidence for the UK Global Talent Visa (Digital Technology).
+The system was architected and implemented by Ibrahim Akintunde Akinyera, with risk-domain review by Busayo Ezra Odukoya (Senior Technology Risk Management Analyst, CME Group). It forms a core part of the Technical Contribution evidence for the UK Global Talent Visa (Digital Technology).
 
 ------------------------------------------------------------
 ## 1. Why This Project Exists
@@ -163,7 +163,7 @@ Included:
 - Code showing ML + risk analytics engineering
 
 Reviewed by:
-Busayo E. Odukoya  
+Busayo Ezra Odukoya  
 Senior Technology Risk Management Analyst  
 CME Group
 
@@ -171,7 +171,7 @@ CME Group
 ## 10. Credits
 
 Ibrahim Akintunde Akinyera – System Architect and Lead Engineer  
-Busayo E. Odukoya – Risk-domain reviewer and technical validation
+Busayo Ezra Odukoya – Risk-domain reviewer and technical validation
 
 ------------------------------------------------------------
 ## 11. License
