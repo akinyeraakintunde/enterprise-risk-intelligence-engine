@@ -12,7 +12,7 @@ Ibrahim Akintunde Akinyera
 The Enterprise Risk Intelligence Engine is a Python-based system designed to analyse organisational log data, detect anomalies, score key risk indicators (KRIs), and generate explainable risk reports. It demonstrates strong engineering capability across machine learning, cybersecurity analytics, log processing, risk scoring, and automated reporting.
 
 The system was architected and implemented by Ibrahim Akintunde Akinyera.  
-Risk-domain validation was provided by **Busayo E. Odukoya**, Senior Technology Risk Management Analyst at CME Group, one of the world’s largest financial market infrastructure organisations.
+Risk-domain validation was provided by **Busayo Ezra Odukoya**, Senior Technology Risk Management Analyst at CME Group, one of the world’s largest financial market infrastructure organisations.
 
 This project is submitted as part of Ibrahim’s Technical Contribution evidence for the UK Global Talent Visa (Digital Technology).
 
@@ -72,7 +72,7 @@ Ibrahim produced full documentation:
 ------------------------------------------------------------
 ## 4. Role of External Reviewer
 
-The scoring model, KRIs, thresholds, and governance relevance were **reviewed by Busayo E. Odukoya**, Senior Technology Risk Management Analyst at CME Group.
+The scoring model, KRIs, thresholds, and governance relevance were **reviewed by Busayo Ezra Odukoya**, Senior Technology Risk Management Analyst at CME Group.
 
 Busayo provided:
 - validation of risk domains and KRIs  
