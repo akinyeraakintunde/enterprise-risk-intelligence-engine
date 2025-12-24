@@ -1,187 +1,153 @@
-# Enterprise Risk Intelligence Engine
+# Enterprise Risk Intelligence Engine  
+**Live AI Risk Scoring & Narrative Reporting Platform**
 
-The Enterprise Risk Intelligence Engine is a Python-based system for assessing, scoring, and explaining enterprise risks by analysing logs, detecting anomalies, and applying a structured KRI-driven scoring model. It is designed for SMEs, cybersecurity teams, and digital organisations that require automated, transparent, and repeatable risk evaluation.
+🚀 **Live Demo:**  
+👉 https://enterprise-risk-intelligence-engine.onrender.com
 
-The system was architected and implemented by Ibrahim Akintunde Akinyera, with risk-domain review by Busayo Ezra Odukoya (Senior Technology Risk Management Analyst, CME Group). It forms a core part of the Technical Contribution evidence for the UK Global Talent Visa (Digital Technology).
+---
 
-------------------------------------------------------------
-## 1. Why This Project Exists
+## Overview
 
-Most organisations rely on spreadsheets and subjective judgement when assessing operational or technology risk. This leads to:
+The **Enterprise Risk Intelligence Engine** is an applied AI system that transforms raw operational logs and event data into **actionable enterprise risk insights**.
 
-- inconsistent assessments across teams
-- no traceability or justification behind decisions
-- no automation or repeatability
-- limited visibility into anomalous behaviour
-- weak governance, oversight, and accountability
+It demonstrates how organisations can move from fragmented operational data to **quantified, explainable, and decision-ready risk intelligence**, delivered through a live, production-deployed interface.
 
-This engine provides a structured and automated alternative through:
+This project focuses on **real-world enterprise risk workflows**, not academic modelling.
 
-- anomaly detection using Isolation Forest
-- KRI-based quantitative scoring
-- automated narrative reporting
-- clear architecture and documentation
-- reproducible, extensible engineering patterns
+---
 
-------------------------------------------------------------
-## 2. Key Features
+## What the System Does
 
-- Anomaly Detection  
-  Detects unusual log patterns using Isolation Forest.
+**Input**  
+📂 Upload a CSV file containing operational events, incidents, or logs.
 
-- KRI-Based Risk Scoring  
-  Scores anomaly severity, login risk, error spikes, rare events, and log volume variation.
+**Processing Pipeline**
+1. Data validation and cleansing  
+2. Feature aggregation and enrichment  
+3. Key Risk Indicator (KRI) computation  
+4. Anomaly estimation  
+5. Composite enterprise risk scoring  
+6. Automated narrative risk reporting  
 
-- Explainable Outputs  
-  Generates narrative notes explaining each risk factor.
+**Output**
+- 🔢 Overall Risk Score (0–100)  
+- 🚦 Risk Classification (Low / Medium / High)  
+- 📊 Key Risk Indicators (KRIs)  
+- 🧠 Explainable drivers of risk  
+- 📝 Plain-English executive summary  
+- ⬇️ Downloadable scored dataset  
 
-- Automated Reporting  
-  Produces text or HTML risk reports.
+---
 
-- Modular Architecture  
-  Separate modules for ML detection, scoring, analysis, and reporting.
+## Live Demo Walkthrough
 
-- Tech Nation Evidence Ready  
-  Includes documentation, diagrams, and the full Evidence PDF.
+1. Open the live demo link  
+2. Upload a CSV file  
+3. View:
+   - computed KRIs  
+   - enterprise risk score  
+   - explainable narrative summary  
+4. Download the scored output  
 
-------------------------------------------------------------
-## 3. System Architecture
+No login. No setup.
 
-A full system architecture diagram is available under:
-docs/figures/architecture_diagram.png
+---
 
-High-level flow:
-1. Raw logs ingested
-2. Normalisation and feature extraction
-3. Isolation Forest anomaly detection
-4. KRI computation
-5. Weighted risk scoring
-6. Risk band classification
-7. Narrative report generation
+## Why This Matters
 
-------------------------------------------------------------
-## 4. Repository Structure
+Most risk tools either:
+- present dashboards without explanation, or  
+- generate black-box scores that cannot be defended to auditors or leadership.
 
-enterprise-risk-intelligence-engine/
-|
-├── data/                     Sample log input files
-├── docs/
-│   └── figures/              Architecture and scoring diagrams
-├── src/
-│   ├── anomaly_detector.py   ML-based anomaly detection
-│   ├── risk_score_engine.py  KRI-based scoring logic
-│   ├── risk_analyzer.py      Full pipeline orchestrator
-│   ├── report_generator.py   Text and HTML reporting
-│   └── utils.py              Helper utilities
-|
-├── outputs/                  Generated risk reports
-├── tests/                    Unit tests (optional)
-|
-├── Evidence_4_Enterprise_Risk_Intelligence_Engine_Ibrahim_Akinyera.pdf
+This engine prioritises:
+- **Explainability**
+- **Governance-aligned metrics**
+- **Audit-friendly outputs**
+- **Executive-ready narratives**
+
+It mirrors how AI is actually adopted inside regulated enterprise environments.
+
+---
+
+## Use Cases
+
+- Enterprise Risk Management (ERM)  
+- Internal Audit & Assurance  
+- Operational Resilience  
+- Compliance & Controls  
+- Cyber / IT Risk Analytics  
+
+---
+
+## Repository Structure
+
+.
+├── data/               # Sample and reference datasets
+├── diagrams/           # Architecture and system diagrams
+├── docs/               # Design documentation
+├── examples/           # Example inputs
+├── outputs/            # Generated outputs and reports
+├── src/                # Core risk logic and analytics
+├── streamlit_app.py    # Live demo application
+├── requirements.txt    # Dependencies
 ├── TECH_NATION_EVIDENCE.md
-├── requirements.txt
 └── README.md
 
-------------------------------------------------------------
-## 5. Installation
+---
 
-Clone the repo:
+## Tech Stack
 
-git clone https://github.com/akinyeraakintunde/enterprise-risk-intelligence-engine.git
-cd enterprise-risk-intelligence-engine
+- Python  
+- Pandas / NumPy  
+- Streamlit (live UI)  
+- Statistical & rule-based risk modelling  
+- Explainable narrative generation  
+- Render (production deployment)  
 
-Install dependencies:
+---
 
-pip install -r requirements.txt
+## Design Philosophy
 
-------------------------------------------------------------
-## 6. Running the Engine
+- Explainability over black-box accuracy  
+- Enterprise-aligned risk metrics  
+- Human-readable reporting  
+- Production realism (live deployment, real inputs)  
 
-Default run:
+---
 
-python src/risk_analyzer.py
+## Limitations (Intentional)
 
-Default inputs:
-data/system_logs/sample_logs.csv
+- Heuristic and statistical methods (no deep learning yet)  
+- Demo-scale datasets  
+- Single-tenant deployment  
 
-Default outputs:
-outputs/risk_report.txt
+These choices prioritise clarity, governance, and interpretability.
 
-Custom paths:
+---
 
-python src/risk_analyzer.py --input data/my_logs.csv --output reports/my_report.txt
+## Planned Enhancements
 
-------------------------------------------------------------
-## 7. Scoring Logic (KRI Model)
+- Machine learning–based anomaly detection  
+- Time-series risk trend analysis  
+- PDF executive risk reports  
+- API-first FastAPI version  
+- Expanded CI/CD test coverage  
 
-def calculate_risk_score(kri_scores):
-    weights = {
-        "anomaly_severity": 0.30,
-        "log_volume_variation": 0.20,
-        "failed_login_rate": 0.20,
-        "error_spike_index": 0.20,
-        "rare_event_density": 0.10
-    }
+---
 
-    final_score = 0
-    for kri, value in kri_scores.items():
-        final_score += weights.get(kri, 0) * value
+## Author
 
-    return round(final_score, 2)
+**Ibrahim Akintunde Akinyera**  
+Founder & Applied AI Engineer  
+GitHub: https://github.com/akinyeraakintunde  
 
-Higher scores indicate higher risk.
+This project forms part of my applied work in:
+- AI-driven decision intelligence  
+- Enterprise risk analytics  
+- Production-ready AI systems  
 
-------------------------------------------------------------
-## 8. Outputs
+---
 
-The generated report includes:
-
-- Overall risk score (0–100)
-- Risk band (Low, Medium, High)
-- KRI breakdown
-- Anomaly summary
-- Narrative explanation
-- Recommended next steps
-
-Sample output diagram:
-docs/figures/risk_report_sample.png
-
-## 🔴 Live Demo
-A tiny Streamlit demo: upload CSV logs → risk score → narrative report.
-
-- Demo: https://enterprise-risk-intelligence-engine.onrender.com
-- What it shows: Upload → KRIs → anomaly estimate → risk score → downloadable report
-🟢 Status: Live (Production)
-
-Deployed on Render and publicly accessible.
-------------------------------------------------------------
-## 9. UK Global Talent Evidence
-
-This repository underpins the submission:
-
-Evidence 4: Enterprise Risk Intelligence Engine  
-by Ibrahim Akintunde Akinyera
-
-Included:
-
-- Full Evidence PDF
-- Technical documentation
-- Architecture diagrams
-- Scoring logic diagrams
-- Code showing ML + risk analytics engineering
-
-Reviewed by:
-Busayo Ezra Odukoya  
-Senior Technology Risk Management Analyst  
-CME Group
-
-------------------------------------------------------------
-## 10. Credits
-
-Ibrahim Akintunde Akinyera – System Architect and Lead Engineer  
-Busayo Ezra Odukoya – Risk-domain reviewer and technical validation
-
-------------------------------------------------------------
-## 11. License
+## License
 
 MIT License
