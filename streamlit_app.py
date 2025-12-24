@@ -186,9 +186,9 @@ def make_report(df: pd.DataFrame, result: RiskResult) -> str:
 # -----------------------------
 # Streamlit UI
 # -----------------------------
-st.set_page_config(page_title="Risk Intelligence Engine — Live Demo", layout="wide")
+st.set_page_config(page_title="Risk Intelligence Engine Live Demo", layout="wide")
 
-st.title("Enterprise Risk Intelligence Engine — Live Demo")
+st.title("Enterprise Risk Intelligence Engine Live Demo")
 st.caption("Upload a CSV of logs/events → KRIs + anomaly estimate → risk score → narrative report")
 
 with st.sidebar:
