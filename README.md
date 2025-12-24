@@ -151,7 +151,9 @@ A tiny Streamlit demo: upload CSV logs → risk score → narrative report.
 
 - Demo: https://enterprise-risk-intelligence-engine.onrender.com
 - What it shows: Upload → KRIs → anomaly estimate → risk score → downloadable report
+🟢 Status: Live (Production)
 
+Deployed on Render and publicly accessible.
 ------------------------------------------------------------
 ## 9. UK Global Talent Evidence
 
