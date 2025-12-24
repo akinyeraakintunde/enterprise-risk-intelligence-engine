@@ -146,6 +146,12 @@ The generated report includes:
 Sample output diagram:
 docs/figures/risk_report_sample.png
 
+## 🔴 Live Demo
+A tiny Streamlit demo: upload CSV logs → risk score → narrative report.
+
+- Demo: (add your Render URL)
+- What it shows: Upload → KRIs → anomaly estimate → risk score → downloadable report
+
 ------------------------------------------------------------
 ## 9. UK Global Talent Evidence
 
