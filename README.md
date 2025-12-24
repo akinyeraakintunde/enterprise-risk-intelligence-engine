@@ -135,11 +135,15 @@ These choices prioritise clarity, governance, and interpretability.
 
 ---
 
-## Author
+## Project Ownership & Contributors
 
-**Ibrahim Akintunde Akinyera**  
-Founder & Applied AI Engineer  
-GitHub: https://github.com/akinyeraakintunde  
+This project was led and architected by **Ibrahim Akinyera**, who designed the AI architecture, scoring logic, anomaly detection approach, and automated narrative reporting pipeline as part of applied enterprise risk research and UK Global Talent technical evidence.
+
+**Key Contributors:**
+- **Ibrahim Akinyera** — AI/ML Lead & Project Architect  
+- **Busayo Odukoya** — Technology Risk Expert (domain input, risk frameworks, governance alignment)  
+
+All final technical design decisions, system architecture, and production deployment were led by Ibrahim Akinyera.  
 
 This project forms part of my applied work in:
 - AI-driven decision intelligence  
