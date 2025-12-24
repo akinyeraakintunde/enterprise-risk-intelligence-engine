@@ -163,7 +163,7 @@ def build_narrative(kris: Dict[str, float], anomaly_rate: float, risk_score: flo
 def make_report(df: pd.DataFrame, result: RiskResult) -> str:
     # Plain text report (super simple + downloadable)
     lines = []
-    lines.append("ENTERPRISE RISK INTELLIGENCE — DEMO REPORT")
+    lines.append("ENTERPRISE RISK INTELLIGENCE DEMO REPORT")
     lines.append("=" * 44)
     lines.append(f"Generated: {datetime.utcnow().isoformat()}Z")
     lines.append(f"Rows analysed: {len(df):,}")
